@@ -2,6 +2,7 @@
 
 cloudera 5.16.x got installed into a 16GB single machine ASUS.
 Thanks to HashiCorp Vagrant ...
+added hortonworks ansible roles to build a hortonworks cluster in 3 machines.
 
 step 1:
 ![alt tag](https://github.com/Sathiyarajan/big-data-e2e/blob/master/cloudera-installation-steps/images/1-cloudera-manager-login-page.png)
