@@ -1,0 +1,49 @@
+---
+repository: https://github.com/bennojoy/mywebapp.git
+
+openldap_server_pkgs:
+  - openldap-servers
+  - openldap-clients
+  - libselinux-python
+  - openssl
+
+openldap_server_app_path: "/etc/openldap/"
+openldap_server_user: ldap
+
+es_listen_external: false
+
+fluentd_syslog_port: 42185
+fluentd_http_port: 9919
+fluentd_debug_port: 24230
+
+
+logstash_syslog_port: 5044
+logstash_localsyslog_port: 5000
+
+es_local_port: 9200
+es_listen_external: false
+
+syslog_listen_external: false
+
+hadoop_master: localhost
+
+kafka_hosts: ['localhost']
+
+zookeeper_hosts: ['localhost']
+zookeeper_version: 3.4.10
+zookeeper_group: zookeeper
+zookeeper_user: zookeeper
+zookeeper_root_dir: /usr/share
+zookeeper_install_dir: '{{ zookeeper_root_dir}}/zookeeper-{{zookeeper_version}}'
+zookeeper_dir: '{{ zookeeper_root_dir }}/zookeeper'
+zookeeper_log_dir: /var/log/zookeeper
+zookeeper_data_dir: /var/lib/zookeeper
+zookeeper_data_log_dir: /var/lib/zookeeper
+zookeeper_client_port: 2181
+zookeeper_id: 1
+zookeeper_leader_port: 2888
+zookeeper_election_port: 3888
+
+
+
+
